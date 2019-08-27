@@ -1,0 +1,61 @@
+
+.divider-home {
+	position: fixed;
+	padding: 5px;
+	background-color: green;
+	justify-content: space-between;
+	width: 100%;
+	height: 60%;
+	
+  }
+  .divider-left{
+	  background-color: #fff;
+	  width: 50%;
+	  transition: width 1s;
+	  transform: skewX(-10deg);
+	  position: relative;
+	}
+  .divider-right{
+	background-color: #000;
+	width: 50%;
+	position: relative;
+	transition: width 1s;
+	transform: skewX(-10deg);	
+}
+    .divider-left.grow {
+	width: 75%;
+	overflow: visible;
+	transition: width 2s;
+  }
+  
+  .divider-right.grow {
+	width: 75%;
+	overflow: visible;
+	transition: width 2s;
+  }
+.left-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gold;
+	overflow: hidden;
+    left: -5%;
+	width: 105%;
+	transition: width 1s;
+	position: absolute;
+	height: 100%;
+	padding: 0 15%;
+  }
+  .right-main {
+	padding: 0 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: lightblue;
+	overflow: hidden;
+	position: absolute;
+	width: 105%;
+	right: -5%;
+	height: 100%;
+	transition: width 1s;
+  }
