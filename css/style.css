@@ -291,9 +291,16 @@ padding: 31px 0;
 	  height: 450px;
 	  border: none;
   }
+  .video-1 .card .player__icon{
+	  position: absolute;
+	  top: 0%;
+	  left: 47%;
+	  width: 50px;
+  }
   .video-1 .card .card-body{    
 		position: absolute;
-    	bottom: 10px;
+		bottom: 5px;
+		padding: 35px 30px;
 }
   .video-1 .card a img{
 	  height: 450px;
@@ -310,17 +317,45 @@ padding: 31px 0;
   }
   .video-1 .card .card-body .video__stat{
 	  font-size: 15px;
+	  width: 40%;
   }
   .video-1 .card .card-body .video__stat img{
 	  width: 15px;
 	  height: 100%;
+	  margin-right: 5px;
+	  transform: translateY(-2px);
   }
-  .video-1 .card .card-body .video__stat .video__date{}
-  .video-1 .card .card-body .video__stat .video__seen{}
   .video-1 .card .card-body .video__title{
 	  font-size: 22px;
 	  font-family: AvenirNextCyrDemi;
   }
+  .vide-2{
+
+  }
+  .vide-2 .video__item{
+
+  }
+  .vide-2 .video__item .item__img{
+
+  }
+  .vide-2 .video__item .item__img img{
+
+	}
+	.vide-2 .video__item .item__content{
+
+	}
+	.vide-2 .video__item .item__content .video__stat{
+		
+	}
+	.vide-2 .video__item .item__content .video__date{
+		
+	}
+	.vide-2 .video__item .item__content .video__seen{
+		
+	}
+	.vide-2 .video__item .item__content .video__title{
+		
+	}
 /* !videos section */
 
 /* ulinks section */
