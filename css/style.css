@@ -1,10 +1,70 @@
+@font-face{
+	font-family: ProximaNovaRegular;
+	src: url(../fonts/ProximaNova-Regular.woff);
+}
+@font-face{
+	font-family: AvenirNextCyr;
+	src: url(../fonts/AvenirNextCyr-Medium.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrRegular;
+	src: url(../fonts/AvenirNextCyr-Regular.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrBold;
+	src: url(../fonts/AvenirNextCyr-Bold.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrDemi;
+	src: url(../fonts/AvenirNextCyr-Demi.woff);
+}
+.container {
+    max-width: 1440px;
+}
+body{
+	font-family: AvenirNextCyrRegular;
+	font-size: 15px;
+}
+
 /* HOME PAGE */
 /* header section */
 header{
 	position: absolute;
     top: 0;
     width: 100%;
-    z-index: +1;
+    z-index: 1;
+}
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 18px;
+	font-family: AvenirNextCyrRegular;
+	color: #ffffff;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar{
+padding: 31px 0;
+}
+.navbar-nav {
+	width: 100%;
+	justify-content: space-between;
+}
+.email, .phone, .mobile__version, .sight, .search, .language{
+	display: inline-block;
+}
+.email a, .phone a, .mobile__version a, .search a, .language a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.email .email__icon, .phone .phone__icon, .mobile__version .mobile__icon, .search .search__icon, .language .language__icon{
+	width: 15px;
+}
+.sight .sight__icon{
+	width: 20px;
+}
+.bottom__left, .bottom__right{
+	width: 35%;
+	padding-top: 45px;
 }
 /* !header section */
 
@@ -14,7 +74,18 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
+}
+.header-wrapper__main{
+	width: 50%;
+	margin: auto;
+	position: relative;
+	z-index: -1;
+}
+.header-wrapper__main h1{
+	font-size: 50px;
+	font-family: AvenirNextCyrDemi;
+	color: #ffffff;
 }
 .header-wrapper .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -26,9 +97,12 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
-  
+.soc__1, .soc__2{
+	width: 50%;
+}
+
 /* !header-wrapper */
 
 /* news section */
@@ -37,7 +111,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .news-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -49,7 +123,7 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
 /* !news section */
 
@@ -59,7 +133,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .services-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -71,8 +145,78 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
+  .services-row{
+	  -ms-flex: 0 0 76%;
+    flex: 0 0 76%;
+	max-width: 76%;
+	position: relative;
+	width: 100%;
+	padding: 0 7.5px;
+  }
+  .services-col {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+	max-width: 25%;
+	position: relative;
+    width: 100%;
+    padding-right: 7.5px;
+	padding-left: 7.5px;
+	margin-bottom: 15px;
+	height: 250px;
+	box-shadow: 0px 3px 12px 0px rgba(93, 93, 93, 0.15);
+}
+.services-col .services__item{
+	height: 250px;
+	background-color: #ffffff;
+	color: black;
+	border-radius: 4px;
+}
+.services-col .services__item  img{
+	width: 75px;
+}
+.services-col .services__item .item__title{
+	font-size: 24px;
+	font-family: AvenirNextCyrDemi;
+}
+.services-col .services__item .item__info{}
+
+/* b */
+.services-bad-col {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+	max-width: 24%;
+	position: relative;
+    width: 100%;
+    padding-right: 7.5px;
+	margin-bottom: 15px;
+}
+.services-bad-col .services__item{
+	height: 515px;
+	background-color: #ffffff;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 0px 3px 12px 0px rgba(93, 93, 93, 0.15);
+}
+.services-bad-col .services__item  img{
+	
+}
+.services-bad-col .services__item .item__info{
+	min-height: 185px;
+	padding: 0 30px;
+}
+.services-bad-col .services__item .item__info h3{
+	font-size: 24px;
+	font-family: AvenirNextCyrDemi;
+	color: #003e7b;
+}
+
+/* b */
+
+
+
+
 /* !services section */
 
 /* management section */
@@ -81,7 +225,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .management-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -93,7 +237,7 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
 /* !management section */
 
@@ -103,7 +247,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .stuff-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -115,7 +259,7 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
 /* !stuff section */
 
@@ -125,7 +269,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .videos-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -137,7 +281,45 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
+  }
+  .video-1{
+	  padding: 10px;
+	  background-color: #ffffff;
+  }
+  .video-1 .card{
+	  height: 450px;
+	  border: none;
+  }
+  .video-1 .card .card-body{    
+		position: absolute;
+    	bottom: 10px;
+}
+  .video-1 .card a img{
+	  height: 450px;
+  }
+  .video-1 .card a .img__overlay{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  bottom: 0;
+	  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,transparent 40%,rgba(0,0,0,0.9) 100%);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,transparent 40%,rgba(0,0,0,0.9) 100% 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,transparent 40%,rgba(0,0,0,0.9) 100%);
+  }
+  .video-1 .card .card-body .video__stat{
+	  font-size: 15px;
+  }
+  .video-1 .card .card-body .video__stat img{
+	  width: 15px;
+	  height: 100%;
+  }
+  .video-1 .card .card-body .video__stat .video__date{}
+  .video-1 .card .card-body .video__stat .video__seen{}
+  .video-1 .card .card-body .video__title{
+	  font-size: 22px;
+	  font-family: AvenirNextCyrDemi;
   }
 /* !videos section */
 
@@ -147,7 +329,7 @@ header{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 .ulinks-home .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -159,7 +341,7 @@ header{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
   }
 /* !ulinks section */
 /* footer section */
@@ -168,7 +350,7 @@ footer{
     background-size: cover;
 	background-position: center center;
 	position: relative;
-	z-index: 0;
+	z-index: -2;
 }
 footer .back{
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0.94902) 100%);
@@ -180,8 +362,23 @@ footer .back{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: +1;
+	z-index: -1;
 	height: 25px;
   }
 /* !footer section */
 /*END_HOME PAGE  */
+/* Abdumalik */
+.a-content{
+	position: relative;
+	  height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  padding: 10% 0;
+	  color: white;
+  }
+  .a-content .heading-inner{
+	text-align: center;
+	font-family: AvenirNextCyrBold;
+  }
+/* Abdumalik */
