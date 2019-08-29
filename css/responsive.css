@@ -1,0 +1,45 @@
+@media(max-width: 1200px){
+	.header-wrapper__main{
+		width: 80%;
+	}
+	.header-wrapper__main h1{
+		font-size: 40px;
+	}
+	.services-bad-col p{
+		display: none;
+	}
+	.services-col .item__info{
+		display: none;
+	}
+	.services-bad-col .services__item .item__info h3{
+		font-size: 20px;
+	}
+	.services-col .services__item .item__title{
+		font-size: 20px;
+	}
+	.international .inter-text-slider{
+		top: 0;
+	}
+	.international .inter-items-slider{
+		top: 0;
+	}
+	.inter-text-slider .text{
+		display: none;
+	}
+	.video-1 .card .card-body .video__stat{
+		width: 100%;
+	}
+	.footer__main .c-2{
+		width:80%;
+		
+	}
+}
+
+@media (max-width:992px){
+	.navbar-nav{
+		display: none;
+	}
+	.header-wrapper__main h1{
+		font-size: 35px;
+	}
+}
