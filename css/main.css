@@ -1,0 +1,109 @@
+@font-face{
+	font-family: ProximaNovaRegular;
+	src: url(../fonts/ProximaNova-Regular.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrLight;
+	src: url(../fonts/AvenirNextCyr-Light.woff);
+}
+@font-face{
+	font-family: AvenirNextCyr;
+	src: url(../fonts/AvenirNextCyr-Medium.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrRegular;
+	src: url(../fonts/AvenirNextCyr-Regular.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrBold;
+	src: url(../fonts/AvenirNextCyr-Bold.woff);
+}
+@font-face{
+	font-family: AvenirNextCyrDemi;
+	src: url(../fonts/AvenirNextCyr-Demi.woff);
+}
+@font-face{
+	font-family: Myriad;
+	src: url(../fonts/Myriad.ttf);
+}
+.container {
+    max-width: 1440px;
+}
+.login__page{
+    background-image: url(../images/login_back.png);
+    background-position: center center;
+    padding: 140px 0;
+}
+.login__page .login__main{
+    background-color: #ffffff;
+    max-width: 660px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 120px;
+}
+.login__page .login__main .logo{
+    padding-bottom: 15px;
+}
+.login__page .login__main .logo img{
+    max-width: 65px;
+}
+.login__page .login__main .company__name{
+    font-family: AvenirNextCyrRegular;
+    color: #221c17;
+    font-size: 18px;
+}
+.login__page .login__main form{
+    margin-top: 75px;
+}
+.login__page .login__main form span{
+    border: none;
+    border-bottom: 1px solid #bcbcbc;
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #4c4c4c;
+}
+
+.login__page .login__main form img{
+}
+.login__page .login__main form .inputs__login{
+    justify-content: center;
+}
+.login__page .login__main form .inputs__login:first-child{
+    margin-bottom: 40px;
+}
+.login__page .login__main form .inputs__login:nth-child(2){
+    margin-bottom: 25px;
+}
+.login__page .login__main form input{
+    border: none;
+    border-bottom: 1px solid #bcbcbc;
+    width: calc(100% - 35px);
+}
+.login__page .login__main form input::placeholder{
+    color: #bebebe;
+}
+.login__page .login__main form input:focus{
+    outline: none;
+    border:none;
+}
+.login__page .login__main .register{
+    font-size: 16px;
+}
+.login__page .login__main .register a{
+    text-decoration: none;
+    font-family: AvenirNextCyrRegular;
+    color: #003e7b;
+}
+.login__page .login__main button{
+    margin-top: 60px;
+    font-family: AvenirNextCyrRegular;
+    font-size: 18px;
+    padding: 0 65px;
+    height: 40px;
+    background-color: #003e7b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+  
